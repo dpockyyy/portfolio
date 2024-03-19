@@ -12,13 +12,15 @@ const Tech = () => {
         <p className={styles.sectionSubTextLight}>My skills</p>
         <h2 className={styles.sectionHeadTextLight}>Technologies.</h2>
       </motion.div>
+      <div className="flex justify-center">
+        <div className="flex flex-wrap justify-center gap-10 mt-14 w-[50%] mr-200px">
+          {technologies.map((technology) => (
+            <div className="w-28 h-28" key={technology.name}>
+              <BallCanvas icon={technology.icon} />
+            </div>
+          ))}
+      </div>
 
-      <div className="flex flex-wrap justify-center gap-10 mt-14">
-        {technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
-            <BallCanvas icon={technology.icon} />
-          </div>
-        ))}
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
-import { github, pineapple, pineappleHover } from '../assets';
+import { github, terminal, terminalHover } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 
@@ -25,7 +25,7 @@ const ProjectCard = ({
             active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
           } flex items-center justify-center min-w-[170px] 
           h-[420px] cursor-pointer card-shadow`}
-          onClick={() => test(id)}>
+          onClick={() => handleClick(id)}>
           <div 
             className={`absolute top-0 left-0 z-10 bg-jetLight 
             h-full w-full opacity-[0.5] rounded-[24px] cursor-pointer`}></div>
@@ -89,16 +89,15 @@ const ProjectCard = ({
                   onMouseOver={() => {
                     document
                       .querySelector('.btn-icon')
-                      .setAttribute('src', pineappleHover)
+                      .setAttribute('src', terminalHover)
                   }}
                   onMouseOut={() => {
                     document
                       .querySelector('.btn-icon')
-                      .setAttribute('src', pineapple)
+                      .setAttribute('src', terminal)
                   }}>
                   <img 
-                    src={pineapple} 
-                    alt="pineapple" 
+                    src={terminal} 
                     className="btn-icon sm:w-[34px] sm:h-[34px] 
                     w-[30px] h-[30px] object-contain"
                   />
@@ -115,13 +114,13 @@ const ProjectCard = ({
 const Projects = () => {
     const [active, setActive] = useState('project-1')
     
-    function test(id) {
-        if (id === active) {
-            setActive('')
-        } else {
-            setActive(id)
-        }
-    }
+    // function test(id) {
+    //     if (id === active) {
+    //         setActive('')
+    //     } else {
+    //         setActive(id)
+    //     }
+    // }
 
     return (
         <div className="-mt-[6rem]">
@@ -138,7 +137,7 @@ const Projects = () => {
             some of my work, including brief descriptions and links to code
             repositories and live demos. They showcase my ability to tackle
             intricate challenges, adapt to various technologies, and efficiently
-            oversee projects.
+            develop projects.
           </motion.p>
         </div>
 
@@ -155,8 +154,7 @@ const Projects = () => {
                   index={index}
                   {...project}
                   active={active}
-                  handleClick={test}
-                  test={test}
+                  handleClick={setActive}
                   
                 />
             ))}

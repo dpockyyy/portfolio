@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
     return (
-        <div className="-mt-[6rem]">
+        <div className="-mt-[4rem]">
             <motion.div variants={textVariant()}>
               <p className={styles.sectionSubText}>Introduction</p>
               <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -38,15 +38,12 @@ const About = () => {
             <motion.p
               variants={fadeIn('', '', 0.1, 1)}
               className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-              sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-              quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-              vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-              obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-              veniam dolorum ipsum doloribus.
+              Sydney-based software engineer who is eager to leverage my skills and passion for programming to explore how technology can be used to benefit society. 
+              <br />My experiences as a professional poker player have helped me to develop a deeply analytical mindset, strong work ethic and emotional resilience. 
+              <br />I’m a highly motivated individual with a willingness to continuously learn new skills and am actively looking for any opportunities that will enable me to expand on my skill set. 
             </motion.p>
 
-            <div className="mt-20 flex flex-wrap gap-10">
+            <div className="mt-20 flex flex-row gap-10 justify-evenly">
                 {services.map((service, index) => (
                   <ServiceCard key={service.title} index={index} {...service} />
                 ))}

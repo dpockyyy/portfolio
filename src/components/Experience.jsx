@@ -32,8 +32,7 @@ import {
       icon={
         <div className="flex justify-center items-center w-full h-full">
             <img 
-              src={experience.icon} 
-              alt={experience.company_name}
+              src={experience.icon === "" ? "data" : experience.icon} 
               className="w-[60%] h-[60%] object-contain" 
             />
         </div>
@@ -102,7 +101,7 @@ const Experience = () => {
                   ease-in-out"
                   onClick={() =>
                     window.open(
-                        'resume link',
+                        'https://docs.google.com/document/d/1nJHWMAaBbYuNZeJMn5Tf9QxePJEHLKhu/edit?usp=sharing&ouid=102566764826429488618&rtpof=true&sd=true',
                         '_blank'
                     )
                   }

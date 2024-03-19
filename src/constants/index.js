@@ -17,17 +17,18 @@ import {
   postgresql,
   rubyrails,
   graphql,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
   space,
   coverhunt,
   dcc,
   kelhel,
   microverse,
   videopoker,
+  reedit,
+  servo,
+  codingchallenge,
+  ga,
+  poker,
+  quantium,
 } from '../assets';
 
 
@@ -56,13 +57,10 @@ const services = [
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
-    icon: ux,
+    title: 'React Developer',
+    icon: reactjs,
   },
-  {
-    title: 'Software Prototyping',
-    icon: prototyping,
-  },
+
 ];
 
 const technologies = [
@@ -78,18 +76,12 @@ const technologies = [
     name: 'JavaScript',
     icon: javascript,
   },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
+  
   {
     name: 'React JS',
     icon: reactjs,
   },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
+
   {
     name: 'Tailwind CSS',
     icon: tailwind,
@@ -98,14 +90,8 @@ const technologies = [
     name: 'Node JS',
     icon: nodejs,
   },
-  {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
-  },
+
+
   {
     name: 'postgresql',
     icon: postgresql,
@@ -114,14 +100,8 @@ const technologies = [
     name: 'git',
     icon: git,
   },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
+
+
 ];
 
 const projects = [
@@ -149,9 +129,9 @@ const projects = [
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Reedit',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'Reedit is a clone of the popular website "Reddit" with limited functionality',
     tags: [
       {
         name: 'react',
@@ -166,14 +146,14 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    image: reedit,
+    repo: 'https://github.com/dpockyyy/reedit',
+    demo: 'https://reedit.onrender.com/posts',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Servo App',
+    description: 'Collabrative project that uses the Google Maps API to find service stations.',
     tags: [
       {
         name: 'nextjs',
@@ -188,14 +168,14 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    image: servo,
+    repo: 'https://github.com/dpockyyy/servo_app',
+    demo: 'https://servo-app-t113.onrender.com/',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'CODE w/GOGGINS',
+    description: `CODE w/GOGGINS is a coding challenge website where users can level up their coding skills with the help of AI Assistant Drill Sergeant Goggins.`,
     tags: [
       {
         name: 'nextjs',
@@ -210,63 +190,33 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: codingchallenge,
+    repo: 'https://github.com/dpockyyy/codingchallenge',
+    demo: 'https://codingchallenge-9222.onrender.com/',
   },
 ];
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
+    title: 'Software Engineering Immserive Graduate',
+    company_name: 'General Assembly',
+    icon: ga,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'Dec 2023 - Mar 2024',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
+    title: 'Professional Poker Player',
+    company_name: 'Self employed',
+    icon: poker,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Jan 2019 - Dec 2023',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
+    title: 'Data Analyst',
+    company_name: 'Quantium',
+    icon: quantium,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
-    iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Jan 2016 - Jun 2017',
   },
 ];
 

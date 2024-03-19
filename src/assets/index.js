@@ -3,7 +3,7 @@ import nairobi from './backgrounds/nairobi.png';
 import shaq from './personal/shaq.png'
 import worldmap from './backgrounds/world-map.png';
 
-import logo from './logo/logo-black.png'
+import logo from './logo/logo.png'
 import logotext from './logo/logo-text-black.png'
 
 import backend from './icons/backend.png';
@@ -16,6 +16,8 @@ import download from './icons/download.png';
 import downloadHover from './icons/downloadHover.png';
 import pineapple from './icons/pineapple.png';
 import pineappleHover from './icons/pineappleHover.png';
+import terminal from './icons/terminal.png'
+import terminalHover from './icons/terminalHover.png'
 import menu from './icons/menu.png';
 import resume from './icons/resume.png';
 import send from './icons/send.png';
@@ -36,18 +38,19 @@ import graphql from './tech/graphql.png';
 import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
 
+import codingchallenge from './projects/codingchallenge.png'
+import servo from './projects/servo-app.png'
+import reedit from './projects/reedit.png'
 import videopoker from './projects/video-poker.png'
-import komikult from './projects/komikult.png';
-import leaderboard from './projects/leaderboard.png';
-import math from './projects/math-magicians.png';
-import movie from './projects/movie-metro.png';
-import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
 
 import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
+import ga from './company/GA.png'
+import poker from './company/poker.png'
+import quantium from './company/quantium.png'
 
 export {
     bwmap,
@@ -84,15 +87,18 @@ export {
     resume,
     send,
     sendHover,
-    komikult,
-    leaderboard,
-    math,
-    movie,
-    nyeusi,
     space,
     coverhunt,
     dcc,
     kelhel,
     microverse,
     videopoker,
+    reedit,
+    servo,
+    codingchallenge,
+    terminal,
+    terminalHover,
+    ga,
+    poker,
+    quantium,
 }
