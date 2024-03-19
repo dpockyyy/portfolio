@@ -32,7 +32,7 @@ import {
       icon={
         <div className="flex justify-center items-center w-full h-full">
             <img 
-              src={experience.icon === "" ? "data" : experience.icon} 
+              src={experience.icon} 
               className="w-[60%] h-[60%] object-contain" 
             />
         </div>
@@ -80,7 +80,7 @@ const Experience = () => {
                 contentArrowStyle={{
                   borderRight: '7px solid #232631',
                 }}
-                iconStyle={{ background: '#333333' }}
+                iconStyle={{ background: '#797979' }}
                 icon={
                   <div className="flex justify-center items-center w-full h-full">
                     <img 

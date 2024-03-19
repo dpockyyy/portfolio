@@ -198,24 +198,24 @@ const projects = [
 
 const experiences = [
   {
-    title: 'Software Engineering Immserive Graduate',
+    title: 'Software Engineering Immersive Graduate',
     company_name: 'General Assembly',
     icon: ga,
-    iconBg: '#333333',
+    iconBg: '#797979',
     date: 'Dec 2023 - Mar 2024',
   },
   {
     title: 'Professional Poker Player',
     company_name: 'Self employed',
     icon: poker,
-    iconBg: '#333333',
+    iconBg: '#797979',
     date: 'Jan 2019 - Dec 2023',
   },
   {
     title: 'Data Analyst',
     company_name: 'Quantium',
     icon: quantium,
-    iconBg: '#333333',
+    iconBg: '#797979',
     date: 'Jan 2016 - Jun 2017',
   },
 ];

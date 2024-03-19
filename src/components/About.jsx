@@ -38,9 +38,8 @@ const About = () => {
             <motion.p
               variants={fadeIn('', '', 0.1, 1)}
               className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-              Sydney-based software engineer who is eager to leverage my skills and passion for programming to explore how technology can be used to benefit society. 
-              <br />My experiences as a professional poker player have helped me to develop a deeply analytical mindset, strong work ethic and emotional resilience. 
-              <br />I’m a highly motivated individual with a willingness to continuously learn new skills and am actively looking for any opportunities that will enable me to expand on my skill set. 
+              Sydney-based software developer who is eager to leverage my skills and passion for programming to explore how technology can be used to benefit society. 
+              My experiences as a professional poker player have helped me to develop a deeply analytical mindset, strong work ethic and emotional resilience. I’m a highly motivated individual with a willingness to continuously learn new skills and am actively looking for any opportunities that will enable me to expand on my skill set. 
             </motion.p>
 
             <div className="mt-20 flex flex-row gap-10 justify-evenly">
